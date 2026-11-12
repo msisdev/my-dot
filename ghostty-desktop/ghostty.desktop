@@ -1,0 +1,25 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ghostty
+Comment=A fast, feature-rich, and cross-platform terminal emulator
+TryExec=/home/minseobk/bin/ghostty
+Exec=/home/minseobk/bin/ghostty
+Icon=/home/minseobk/.local/share/applications/ghostty.png
+Terminal=false
+Categories=System;TerminalEmulator;
+Keywords=terminal;tty;pty;
+StartupNotify=true
+StartupWMClass=com.mitchellh.ghostty
+Actions=new-window;
+X-GNOME-UsesNotifications=true
+X-TerminalArgExec=-e
+X-TerminalArgTitle=--title=
+X-TerminalArgAppId=--class=
+X-TerminalArgDir=--working-directory=
+X-TerminalArgHold=--wait-after-command
+
+[Desktop Action new-window]
+Name=New Window
+Exec=/home/minseobk/bin/ghostty
+

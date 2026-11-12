@@ -1,0 +1,93 @@
+# -----------------------------------------------------------------------------
+# Ghostty Configuration
+# -----------------------------------------------------------------------------
+
+# ==========================================
+# 1. 기본 셸 설정 (Default Shell)
+# ==========================================
+# 기본 셸을 fish로 설정
+command = /usr/bin/fish
+
+
+# ==========================================
+# 2. 테마 및 색상 (Theme & Colors)
+# ==========================================
+# 세련되고 눈이 편안한 Catppuccin Mocha 테마 적용
+# 추천 다른 테마: "TokyoNight", "TokyoNight Storm", "Dracula+", "Nord", "Gruvbox Material Dark"
+# (시스템 다크/라이트 모드 자동 전환 예시: light:Catppuccin Latte,dark:Catppuccin Mocha)
+theme = Subliminal
+
+# 배경 투명도 (0.85 ~ 0.95 추천, 1.0은 완전 불투명)
+background-opacity = 0.8
+background-blur = 20
+
+
+# ==========================================
+# 3. 폰트 설정 (Typography)
+# ==========================================
+# 시스템에 설치된 실제 모노스페이스(고정폭) 폰트 지정
+# (설치되지 않은 폰트명을 적으면 fontconfig가 가변폭 Sans 폰트로 매칭하여 글자가 뚱뚱해집니다)
+font-family = "Iosevka"
+font-family = "DejaVu Sans Mono"
+font-family = "Noto Sans Mono"
+
+# 폰트 크기
+font-size = 13
+
+# ==========================================
+# 4. 커서 스타일 (Cursor)
+# ==========================================
+# 커서 모양: block (기본 블록), beam (세로선 bar), underline (밑줄)
+cursor-style = block
+# 커서 깜빡임 활성화
+cursor-style-blink = true
+# 마우스 클릭으로 커서 이동 허용
+cursor-click-to-move = true
+
+
+# ==========================================
+# 5. 창 스타일 및 여백 (Window & Spacing)
+# ==========================================
+# 창 내부 여백 (패딩을 주면 텍스트가 경계에 닿지 않아 훨씬 미려해집니다)
+window-padding-x = 12
+window-padding-y = 10
+window-padding-balance = true
+window-padding-color = background
+
+# 창 장식 (Linux GTK)
+window-decoration = auto
+gtk-titlebar = true
+gtk-wide-tabs = true
+
+# 새 탭이 열릴 때 작업 디렉토리 상속
+window-inherit-working-directory = true
+
+
+# ==========================================
+# 6. 마우스 및 편의성 (Mouse & Behavior)
+# ==========================================
+# 타이핑 중 마우스 커서 숨기기
+mouse-hide-while-typing = true
+
+# 텍스트 드래그 선택 시 클립보드 자동 복사
+copy-on-select = clipboard
+
+# 스크롤백 버퍼 크기 (라인/바이트)
+scrollback-limit = 10000000
+
+# 창 닫을 때 확인 여부 (편의상 비활성화 또는 true 설정 가능)
+confirm-close-surface = false
+
+
+# ==========================================
+# 7. 분할 화면 (Splits)
+# ==========================================
+# 포커스되지 않은 분할 화면 어둡게 처리 (작업 집중도 향상)
+unfocused-split-opacity = 0.8
+
+
+# ==========================================
+# 8. 셸 통합 (Shell Integration)
+# ==========================================
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
