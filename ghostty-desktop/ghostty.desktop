@@ -3,9 +3,9 @@ Version=1.0
 Type=Application
 Name=Ghostty
 Comment=A fast, feature-rich, and cross-platform terminal emulator
-TryExec=/home/minseobk/bin/ghostty
-Exec=/home/minseobk/bin/ghostty
-Icon=/home/minseobk/.local/share/applications/ghostty.png
+TryExec={{ $HOME }}/bin/ghostty
+Exec={{ $HOME }}/bin/ghostty
+Icon={{ $HOME }}/.local/share/applications/ghostty.png
 Terminal=false
 Categories=System;TerminalEmulator;
 Keywords=terminal;tty;pty;
@@ -21,5 +21,5 @@ X-TerminalArgHold=--wait-after-command
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/home/minseobk/bin/ghostty
+Exec={{ $HOME }}/bin/ghostty
 
